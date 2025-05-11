@@ -2,12 +2,13 @@ project(ECS)
 
 set(SRC_FILES
     main.cpp
+    ComponentStore.cpp
 )
 
 set(H_FILES
-    Component.hpp
-    Entity.hpp
     EntityManager.hpp
+    ComponentStore.hpp
+    Defines.hpp
 )
 
 add_executable(${PROJECT_NAME} ${SRC_FILES} ${H_FILES})
