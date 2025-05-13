@@ -15,12 +15,6 @@ public:
         return id;
     }
 
-    static void popID()
-    {
-        assert(m_componentCounter < 0 && "Cannot pop, there are no IDs left!");
-        m_componentCounter--;
-    }
-
 private:
     static ComponentID m_componentCounter;
 };

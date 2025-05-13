@@ -1,7 +1,6 @@
 project(ECS)
 
 set(SRC_FILES
-    main.cpp
     ComponentStore.cpp
 )
 
@@ -11,7 +10,8 @@ set(H_FILES
     Defines.hpp
 )
 
-add_executable(${PROJECT_NAME} ${SRC_FILES} ${H_FILES})
+add_library(${PROJECT_NAME} STATIC ${SRC_FILES} ${H_FILES})
+target_include_directories(${PROJECT_NAME} PUBLIC .)
 
 if(MSVC)
     target_compile_options(${PROJECT_NAME} PRIVATE /W4)
