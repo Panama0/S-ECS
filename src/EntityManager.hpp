@@ -10,6 +10,9 @@
 #include <queue>
 #include <vector>
 
+namespace SECS
+{
+
 class EntityManager
 {
 public:
@@ -140,3 +143,4 @@ private:
     std::array<std::unique_ptr<ComponentStoreBase>, MAX_COMP>
         m_componentStores;
 };
+}

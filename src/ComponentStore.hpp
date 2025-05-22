@@ -5,6 +5,9 @@
 #include <cassert>
 #include <unordered_map>
 
+namespace SECS
+{
+
 class IDGenerator
 {
 public:
@@ -78,3 +81,4 @@ private:
 
     size_t m_size;
 };
+}
